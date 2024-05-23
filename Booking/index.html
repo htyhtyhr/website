@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chance Casino and Resort</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: "Comic Sans MS";
+            text-decoration:none;
+        }
+        nav{
+            position:sticky;
+            padding:10px;
+            background-color:#11233b;
+            box-shadow: 0 4px 15px rgba(52, 52, 72, 0.662);
+        }
+        .navBar{
+            display: flex;
+            margin: auto;
+            max-width: 1200px;
+            color: #dde6ed;
+            justify-content: space-between;
+        }
+        .navBar > div{
+            display: flex;
+            align-items: center;
+        }
+        .title img,span{
+            margin-right:20px;
+        }
+        .title>span{
+            font-size:1.5rem;
+        }
+        .nav-links > a{
+            margin-right: 20px;
+            padding:5px;
+            border-radius:5px;
+            color: #dde6ed;
+            transition:all 0.2s ease-in-out;
+        }
+        .nav-links > a:hover{
+            background-color: #a50000 !important;
+            color: #8cacda;
+        }
+       
+       
+        @media screen and (max-width:800px) {
+            .navBar{
+                display: flex;
+                flex-direction: column;
+            }
+            .navBar>div{
+                display: inline-block;
+                padding: 1% 2%;
+                margin:auto;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="navBar">
+            <div class="title">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Card_club.svg/167px-Card_club.svg.png?20170110224944" alt="logo" width="100" height="100" style="display: block; border-radius: 200px; box-sizing: border-box; background-color: #cfd8dc; border: 15px solid #cfd8dc;">
+                <span>Chance Casino and Resort</span> 
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/Explore/">Explore</a>
+                <a href="/About/">About Us</a>
+                <a href="/Booking/">Booking</a>
+                <a href="/Addiction/">Gambling Addiction?</a>
+            </div>
+        </div>
+    </nav>
+    <div style="margin: 10pt;">
+        <h3>Bar pass: $14.99*</h3>
+        <h3>Day pass: $49.99*</h3>
+        <h3>Standard 1 bedroom: $99.99* per night</h3>
+        <h3>Deluxe 2 bedroom: $159.99* per night</h3>
+        <h3>Alaskan king Honeymoon suite: $299.99* per night</h3>
+        <h6>*Other fees may apply at any point for any reason if deemed necessary</h6>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="Phone">Phone number:</label><br>
+            <input type="text" id="Phone" name="Phone"><br>
+            <input type="checkbox" id="Bar pass" name="Bar pass" value="Bar">
+            <label for="Bar pass"> Bar pass</label><br>
+            <input type="checkbox" id="Day pass" name="Day pass" value="Day">
+            <label for="Day pass"> Day pass</label><br>
+            <input type="checkbox" id="Standard room" name="Standard room" value="Standard">
+            <label for="Standard room"> Standard 1 bedroom</label><br>
+            <input type="checkbox" id="Deluxe room" name="Deluxe room" value="Deluxe">
+            <label for="Deluxe room"> Deluxe 2 bedroom</label><br>
+            <input type="checkbox" id="Honeymoon suite" name="Honeymoon suite" value="Honeymoon">
+            <label for="Honeymoon suite"> Alaskan king Honeymoon suite</label><br>
+            <label for="Card">Card number:</label><br>
+            <input type="text" id="Card" name="Card"><br>
+            <label for="Experation">Experation date (mm/yy):</label><br>
+            <input type="text" id="Experation" name="Experation"><br>
+            <label for="CVV">CVV number:</label><br>
+            <input type="text" id="CVV" name="CVV"><br><br>
+            <div class="nav-links">
+            <a href="/" style="background-color: #11233b;">Submit</a>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
